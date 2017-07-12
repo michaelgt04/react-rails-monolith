@@ -57,12 +57,12 @@ sure to add these components to the Router.
 4. Awesome! We've got a basic React setup and we should be able to see the two React
 containers on the page when we go to the appropriate route. 
 
-Now we actually need to display some real information. This is going to involve setting
-up an API endpoint and a model that gets sent back as JSON. Let's get our cereal model
-setup. This should have a name and description for now. Create the model, put the appropriate
-validations and then define an API endpoint that renders back all the cereals as JSON. Since
-it is sending back all the cereals, this should be your index action within your API
-controller.
+	Now we actually need to display some real information. This is going to involve setting
+	up an API endpoint and a model that gets sent back as JSON. Let's get our cereal model
+	setup. This should have a name and description for now. Create the model, put the appropriate
+	validations and then define an API endpoint that renders back all the cereals as JSON. Since
+	it is sending back all the cereals, this should be your index action within your API
+	controller.
 
 5. Test that API controller! Remember, this is going to involve making model tests for your `Cereal`
 model as well. (Come on, you didn't really think we were going to get away from
