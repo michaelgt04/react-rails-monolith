@@ -22,6 +22,7 @@ to go, complete with a testing setup! Run the following commands in one tab:
 
 ```
 $ bundle install
+$ rake db:create
 $ rails s
 ```
 
@@ -59,7 +60,7 @@ containers on the page when we go to the appropriate route.
 
 	Now we actually need to display some real information. This is going to involve setting
 	up an API endpoint and a model that gets sent back as JSON. Let's get our cereal model
-	setup. This should have a name and description for now. Create the model, put the appropriate
+	setup. This should have a name and description for now. Create the model, add the appropriate
 	validations and then define an API endpoint that renders back all the cereals as JSON. Since
 	it is sending back all the cereals, this should be your index action within your API
 	controller.
@@ -70,9 +71,9 @@ testing, did you?)
 
 6. Now it's time to go back into our React application and get some information for our
 `CerealsIndexContainer` to display. Make a fetch call in the appropriate lifecycle method
-to get all the cereals for you API and display the title of each cereal in a list. (HINT:
-This might be a good place to create a presentational component that you could render a 
-bunch of in a React Fragment!)
+to get all the cereals from your API and display the title of each cereal in a list. (HINT:
+This might be a good place to create a presentational component that you could render an
+array of React components!)
 
 7. Time to test those React components! Follow the testing patterns we setup earlier in
 the cohort to get the `CerealsIndexContainer` and the presentational component it renders
@@ -81,7 +82,7 @@ tested.
 ## Extra Challenge
 
 8. Follow the same API-Test-Component-Test workflow to setup the `CerealShowContainer`. This
-should have an API endpoint that returns the cereal with an id that's in the URL, a fetch
+should have an API endpoint that returns one specific cereal based on the id in the URL, a fetch
 call that gets the cereal's information and a presentational component that displays all of
 that information. 
 
@@ -98,8 +99,8 @@ feel *incredibly* confident about your ability to use our *entire* stack.
 
 Remember to use your `debugger`s and `pry`s to get yourself through the difficult times
 when your code inevitably don't work. This is as good an assignment as any to pair program
-on because you can help each other fill in your gaps in knowledge. You've got this and get
-excited to use the entire stack we've used. 
+on because you can help each other fill in your gaps in knowledge. You've got this! Get
+excited to use the entire stack we've used! 
 
 Also, don't forget to style as you go with your React components! If you wait until the end
 it's going to be a far bigger pain to fit all the styling in at once. Then you can refine
