@@ -78,6 +78,8 @@ bunch of in a React Fragment!)
 the cohort to get the `CerealsIndexContainer` and the presentational component it renders
 tested.
 
+## Extra Challenge
+
 8. Follow the same API-Test-Component-Test workflow to setup the `CerealShowContainer`. This
 should have an API endpoint that returns the cereal with an id that's in the URL, a fetch
 call that gets the cereal's information and a presentational component that displays all of
@@ -87,6 +89,8 @@ that information.
 show page to use React Router `Link` components so that you can navigate about the app 
 seamlessly and without page reloads. Refactor any tests that need to be to account for this
 link component being rendered (Hint, you should need to if your tests are written well).
+
+## Final Words
 
 This is a bear of an assignment! It requires a lot of files and code and really ties together
 everything you've learned thus far as a Launcher. If you complete this assignment, you should
